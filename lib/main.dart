@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
 import 'home_page.dart';
+import 'pages/etapa01_container_base.dart'; // Importação da Etapa 01
 
 void main() {
   runApp(const MyApp());
 }
 
-/// Widget raiz do aplicativo com rotas nomeadas
+/// Widget principal que configura o MaterialApp e define rotas do app
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -18,10 +19,9 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const HomePage(),
-
-        // As etapas serão adicionadas aqui nas próximas fases
-        // '/etapa01': (context) => const Etapa01(),
-        // '/etapa02': (context) => const Etapa02(),
+        '/etapa01':
+            (context) => const Etapa01ContainerBase(), // Rota adicionada
+        // As próximas etapas serão incluídas progressivamente
       },
     );
   }

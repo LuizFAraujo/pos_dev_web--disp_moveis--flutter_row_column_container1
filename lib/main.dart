@@ -1,33 +1,28 @@
 import 'package:flutter/material.dart';
 
+import 'home_page.dart';
+
 void main() {
   runApp(const MyApp());
 }
 
-// Estrutura base com MaterialApp
+/// Widget raiz do aplicativo com rotas nomeadas
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      title: 'Explorando Widgets',
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
-    );
-  }
-}
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const HomePage(),
 
-// HomePage básica com Scaffold
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      // A próxima etapa será implementar o body
-      body: Center(
-        child: Text('Tela inicial pronta', style: TextStyle(fontSize: 18)),
-      ),
+        // As etapas serão adicionadas aqui nas próximas fases
+        // '/etapa01': (context) => const Etapa01(),
+        // '/etapa02': (context) => const Etapa02(),
+      },
     );
   }
 }

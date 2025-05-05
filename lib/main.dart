@@ -5,6 +5,7 @@ import 'pages/etapa01_container_base.dart';
 import 'pages/etapa02_container_margin.dart';
 import 'pages/etapa03_column_child.dart';
 import 'pages/etapa04_multiplos_containers.dart';
+import 'pages/etapa05_row_estrutura.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         '/etapa02': (context) => const Etapa02ContainerMargin(),
         '/etapa03': (context) => const Etapa03ColumnChild(),
         '/etapa04': (context) => const Etapa04MultiplosContainers(),
+        '/etapa05': (context) => const Etapa05RowDentroColumn(),
       },
     );
   }

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'home_page.dart';
-import 'pages/etapa01_container_base.dart'; // Importação da Etapa 01
+import 'pages/etapa01_container_base.dart';
+import 'pages/etapa02_container_margin.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,9 +20,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const HomePage(),
-        '/etapa01':
-            (context) => const Etapa01ContainerBase(), // Rota adicionada
-        // As próximas etapas serão incluídas progressivamente
+        '/etapa01': (context) => const Etapa01ContainerBase(),
+        '/etapa02': (context) => const Etapa02ContainerMargin(),
       },
     );
   }

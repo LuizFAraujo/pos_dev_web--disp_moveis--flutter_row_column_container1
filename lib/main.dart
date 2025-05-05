@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'home_page.dart';
 import 'pages/etapa01_container_base.dart';
 import 'pages/etapa02_container_margin.dart';
+import 'pages/etapa03_column_child.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const HomePage(),
         '/etapa01': (context) => const Etapa01ContainerBase(),
         '/etapa02': (context) => const Etapa02ContainerMargin(),
+        '/etapa03': (context) => const Etapa03ColumnChild(),
       },
     );
   }

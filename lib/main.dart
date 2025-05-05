@@ -8,6 +8,7 @@ import 'pages/etapa04_multiplos_containers.dart';
 import 'pages/etapa05_row_estrutura.dart';
 import 'pages/etapa06_main_cross_axis.dart';
 import 'pages/etapa07_padding_externo.dart';
+import 'pages/etapa08_container_circulo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,6 +36,7 @@ class MyApp extends StatelessWidget {
         '/etapa05': (context) => const Etapa05RowDentroColumn(),
         '/etapa06': (context) => const Etapa06RefatorarComMaterialApp(),
         '/etapa07': (context) => const Etapa07ConteudoNaRow(),
+        '/etapa08': (context) => const Etapa08Alinhamentos(),
       },
     );
   }
